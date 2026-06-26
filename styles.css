@@ -12,6 +12,8 @@
   --muted: #69635d;
   --border: rgba(43, 42, 40, .14);
   --max: 1180px;
+  --gutter: 1.5rem;
+  --gutter-sm: 1.35rem;
 }
 
 /* ========== Base styles ========== */
@@ -161,12 +163,13 @@ a {
 
 /* ========== Shared page structure ========== */
 .section {
-  padding: 5.5rem 1.5rem;
+  padding: 5.5rem 0;
 }
 
 .wrap {
   max-width: var(--max);
   margin: auto;
+  padding: 0 var(--gutter);
 }
 
 .eyebrow {
@@ -253,12 +256,13 @@ p {
   background: var(--linen);
   border-bottom: 1px solid var(--border);
   border-top: 1px solid var(--border);
-  padding: 3.4rem 1.5rem;
+  padding: 3.4rem 0;
 }
 
 .pillar-grid {
   max-width: var(--max);
   margin: auto;
+  padding: 0 var(--gutter);
   display: grid;
   grid-template-columns: repeat(4, 1fr);
 }
@@ -372,12 +376,13 @@ p {
 /* ========== Call to action ========== */
 .cta-band {
   background: var(--taupe);
-  padding: 3rem 1.5rem;
+  padding: 3rem 0;
 }
 
 .cta-inner {
   max-width: var(--max);
   margin: auto;
+  padding: 0 var(--gutter);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -392,12 +397,13 @@ p {
 .footer {
   background: var(--linen);
   border-top: 1px solid var(--border);
-  padding: 4rem 1.5rem 1rem;
+  padding: 4rem 0 1rem;
 }
 
 .footer-grid {
   max-width: var(--max);
   margin: auto;
+  padding: 0 var(--gutter);
   display: grid;
   grid-template-columns: 1.3fr .7fr .7fr 1fr;
   gap: 3rem;
@@ -433,7 +439,7 @@ p {
 
 /* ========== Page headings and cards ========== */
 .page-hero {
-  padding: 6rem 1.5rem;
+  padding: 6rem 0;
   background: var(--linen);
   border-bottom: 1px solid var(--border);
 }
@@ -595,6 +601,10 @@ p {
     display: block;
   }
 
+  .wrap {
+    padding: 0 var(--gutter-sm);
+  }
+
   .nav {
     padding: .9rem 1rem;
   }
@@ -669,7 +679,7 @@ p {
   }
 
   .section {
-    padding: 4rem 1.35rem;
+    padding: 4rem 0;
   }
 
   h1 {
@@ -688,4 +698,5 @@ p {
     max-width: 300px;
   }
 }
+
 
