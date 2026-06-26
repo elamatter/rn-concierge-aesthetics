@@ -235,7 +235,7 @@ p {
     url('assets/ela-hero.png');
   background-repeat: no-repeat, no-repeat;
   background-size: 100% 100%, auto 100%;
-  background-position: center, right center;
+  background-position: left center, right center;
 }
 
 .hero-copy {
